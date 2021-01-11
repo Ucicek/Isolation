@@ -1,6 +1,4 @@
-﻿// Feel free to use/modify this code as a start to pa1
-
-using System;
+﻿using System;
 using static System.Console;
 
 namespace PA1._2
@@ -319,51 +317,3 @@ namespace PA1._2
         }
     }
 }
-
-// Graded by: Louis
-
-/* Initialization (10)
- * + 2/2: Player's name initialization and default behaviour
- * + 1/2: Number of rows on board initialization, default behaviour, and condition check
- * + 1/2: Number of columns on board initialization, default behaviour, and condition check
- * + 0.5/2: Player A's starting platform initialization, default behaviour, and condition check
- * + 0.5/2: Player B's starting platform initialization, default behaviour, and condition check
- * Comments:
- * - If the first row/column check fails, the subsequent checks fail to recognize a default (blank)
- *   output and throw an exception. In fact, the subsequent checks will accept any input, even ones
- *   that are outside boundaries.
- * - Same issues with the platform positions; you're not checking that they are within boundaries
- *   i.e. on the board. You also did not implement a default platform position.
- * - Why is the user not able to input a row for the platform position?
- *
- * Board state display (10)
- * + 2/2: Each player displays correctly on the board and are distinguishable from one another
- * + 0/2: Each platform displays correctly on the board
- * + 2/2: Removed tiles display correctly on the board
- * + 2/2: Remaining (unremoved) tiles display correctly on the board
- * + 2/2: Rows and columns display nicely with no broken lines, and labels align with rows/columns
- * Comments:
- * - I can't tell the platform apart from unremoved tiles.
- *
- * Input Parsing (10)
- * + 2/2: Correctly parsing the input in the form of "abcd", where "ab" is the player movement tile and "cd" is the tile to remove
- * + 1/2: Detects if the player movement is valid, and updates the player position if so
- * + 1/2: Detects if the tile to remove is valid, and updates the board to reflect it if so
- * + 2/2: Passes turn to the other player only if the movement and removal are both valid and been updated to the game
- * + 2/2: Prompts the SAME user without passing the turn if invalid input is given, and no changes are updated to the game
- * Comments:
- * - I have been trying to move Player B for a while now, and every time your game tells me it is an
- *   invalid row address.
- *
- * Style (6)
- * + 1/1: Reasonable variable names i.e. no "temp", etc.
- * + 1/1: Reasonable variable types i.e. string for name, char/int for row and column, etc.
- * + 2/2: Good commenting
- * + 2/2: Good consistent indentation and spacing
- * Comments:
- * - Good comments, but most of your comments are explaining single lines of code.
- *   Would be nice to see comments that describe a chunk of code as a whole.
- *   Also, some of your comments are more note-to-self than aimed at other programmers.
- */
-
-// Grade: 27/36
